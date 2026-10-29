@@ -89,9 +89,13 @@ Valkren busca versiones nuevas al abrirse, cada hora y cuando vuelves a su venta
 
 ## Tus datos
 
-Tu biblioteca, tus ajustes y tus claves se guardan en tu PC (`%APPDATA%\game-tracker`) y nunca se suben a ningún lado. Desinstalar Valkren no los borra.
+Valkren no tiene cuentas ni servidores propios, y no recopila, vende ni comparte tu información.
 
-Algunas funciones usan claves gratuitas de cada servicio (Steam, SteamGridDB, IGDB, IsThereAnyDeal, RetroAchievements). Son personales: cada persona carga las suyas en **Ajustes**.
+- **Todo queda en tu PC.** Tu biblioteca, tus ajustes y tus claves se guardan en `%APPDATA%\game-tracker`; las claves, cifradas por Windows. Nada se sube a ningún servidor de Valkren, porque no existe ninguno. Desinstalar Valkren no borra estos datos.
+- **Sin estadísticas de uso.** La app no envía telemetría, analíticas ni informes de lo que haces.
+- **Cada clave va solo a su servicio.** Algunas funciones usan claves gratuitas de Steam, SteamGridDB, IGDB, IsThereAnyDeal o RetroAchievements. Cada una se usa solo para consultar el servicio que la emitió: la de Steam, solo a Steam. Cada persona carga las suyas en **Ajustes**.
+- **Nunca te pide contraseñas.** Se piden claves de API, que creas en la página de cada servicio y puedes borrar o cambiar allí cuando quieras. Si algo te pide tu contraseña dentro de Valkren, no es Valkren.
+- **Lo que sí sale de tu PC:** las consultas a esos servicios (portadas, datos de juegos, precios), la búsqueda de actualizaciones en GitHub y una consulta diaria de tipos de cambio, para estimar en tu moneda el precio de ofertas de otras tiendas. Cada consulta lleva solo lo que ese servicio necesita: su clave y, en Steam y RetroAchievements, tu Steam ID o tu usuario.
 
 ---
 
