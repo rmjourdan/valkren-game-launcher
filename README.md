@@ -5,7 +5,7 @@
 <h1 align="center">Valkren</h1>
 
 <p align="center">
-  Tus juegos de Steam, Epic, EA, GOG y RetroBat en una sola biblioteca,<br>
+  Tus juegos de Steam, Epic, Xbox, EA, GOG y RetroBat en una sola biblioteca,<br>
   con un Modo TV pensado para jugar con mando desde el sillón.
 </p>
 
@@ -21,6 +21,8 @@
   <a href="#instalar">Instalar</a>
   ·
   <a href="#tus-datos">Tus datos</a>
+  ·
+  <a href="README.en.md">English</a>
 </p>
 
 ![Modo TV de Valkren: Inicio con Red Dead Redemption 2 destacado y la fila de juegos fijados](docs/screenshots/tv-inicio.webp)
@@ -35,7 +37,9 @@ No vende nada ni tiene servidores propios: lee lo que ya está en tu PC y consul
 
 ### Una biblioteca para todas tus tiendas
 
-Steam, Epic Games, EA app, GOG y los juegos de RetroBat aparecen juntos, con su portada y su estado. El Inicio te muestra lo que estabas jugando, lo que dejaste a medias, recomendaciones de tu propia biblioteca y tus juegos fijados.
+Steam, Epic Games, Xbox, EA app, GOG y los juegos de RetroBat aparecen juntos, con su portada y su estado. El Inicio te muestra lo que estabas jugando, lo que dejaste a medias, recomendaciones de tu propia biblioteca y tus juegos fijados.
+
+Conecta tus cuentas de Steam, Epic y Xbox iniciando sesión en la página de cada tienda: llega toda tu biblioteca, con las horas que registra cada una, sin crear claves de API. Xbox trae los juegos que jugaste en la app de Xbox, en Game Pass y en tus consolas.
 
 ![Inicio de escritorio con las filas Fijados y Seguir jugando](docs/screenshots/desktop-inicio.webp)
 
@@ -72,6 +76,7 @@ Ofertas de Steam en tu moneda, ordenadas según lo que juegas, con el historial 
 - **Avisos de Windows** opcionales: instalación lista, actualización disponible, logro desbloqueado.
 - **Inicio con Windows**, bandeja del sistema, accesos directos por juego y juegos recientes en la barra de tareas.
 - **Carpetas de juegos:** suma juegos que no vienen de ninguna tienda eligiendo su carpeta.
+- **En español o en inglés:** por defecto sigue el idioma de Windows, y puedes cambiarlo en **Ajustes** o en el asistente del primer inicio.
 
 ## Instalar
 
@@ -91,11 +96,11 @@ Valkren busca versiones nuevas al abrirse, cada hora y cuando vuelves a su venta
 
 Valkren no tiene cuentas ni servidores propios, y no recopila, vende ni comparte tu información.
 
-- **Todo queda en tu PC.** Tu biblioteca, tus ajustes y tus claves se guardan en `%APPDATA%\game-tracker`; las claves, cifradas por Windows. Nada se sube a ningún servidor de Valkren, porque no existe ninguno. Desinstalar Valkren no borra estos datos.
+- **Todo queda en tu PC.** Tu biblioteca, tus ajustes, tus claves y las sesiones de tus tiendas se guardan en `%APPDATA%\game-tracker`; las claves y las sesiones, cifradas por Windows. Nada se sube a ningún servidor de Valkren, porque no existe ninguno. Desinstalar Valkren no borra estos datos.
 - **Sin estadísticas de uso.** La app no envía telemetría, analíticas ni informes de lo que haces.
-- **Cada clave va solo a su servicio.** Algunas funciones usan claves gratuitas de Steam, SteamGridDB, IGDB, IsThereAnyDeal o RetroAchievements. Cada una se usa solo para consultar el servicio que la emitió: la de Steam, solo a Steam. Cada persona carga las suyas en **Ajustes**.
-- **Nunca te pide contraseñas.** Se piden claves de API, que creas en la página de cada servicio y puedes borrar o cambiar allí cuando quieras. Si algo te pide tu contraseña dentro de Valkren, no es Valkren.
-- **Lo que sí sale de tu PC:** las consultas a esos servicios (portadas, datos de juegos, precios), la búsqueda de actualizaciones en GitHub y una consulta diaria de tipos de cambio, para estimar en tu moneda el precio de ofertas de otras tiendas. Cada consulta lleva solo lo que ese servicio necesita: su clave y, en Steam y RetroAchievements, tu Steam ID o tu usuario.
+- **Cada clave y cada sesión van solo a su servicio.** Las cuentas de Steam, Epic y Xbox, y las claves gratuitas de SteamGridDB, IGDB, IsThereAnyDeal o RetroAchievements, se usan solo para consultar el servicio que las emitió: las de Steam, solo a Steam. Cada persona conecta las suyas en **Ajustes**.
+- **Valkren nunca ve tus contraseñas.** Para conectar la cuenta de una tienda, inicias sesión en su propia página: la de Steam o Epic se abre en una ventana aparte, y la de Microsoft, en tu navegador. Valkren guarda solo la sesión que la tienda le entrega, y la borra al tocar **Desconectar**. Las demás funciones piden claves de API, que creas en la página de cada servicio y puedes borrar o cambiar allí cuando quieras.
+- **Lo que sí sale de tu PC:** las consultas a esos servicios (tu biblioteca y tus horas en cada tienda, portadas, datos de juegos, precios), la búsqueda de actualizaciones en GitHub y una consulta diaria de tipos de cambio, para estimar en tu moneda el precio de ofertas de otras tiendas. Cada consulta lleva solo lo que ese servicio necesita: su sesión o su clave y, en Steam y RetroAchievements, tu Steam ID o tu usuario.
 
 ---
 
